@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.cd0cae5d.css">
+    <title>Kanban Board</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="/scripts.bcf3243b.js" defer="" type="module"></script>
+<script src="/main.cd0cae5d.js"></script></head>
+<body>
+    
+<!--ToDo-->
+
+<header class="header">
+    <h1 class="header__title">Kanban</h1>
+    <div class="header__body">
+        <div class="header__search">
+            <div class="header__search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#acbec6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <input type="text" class="header__input" placeholder="Try searching tasks">
+        </div>
+
+        <nav class="header__burger-menu">
+        <button class="burger-menu__nav-toggle">
+        <span class="burger-menu--bar-top"></span>
+        <span class="burger-menu--bar-mid"></span>
+        <span class="burger-menu--bar-bot"></span>
+        </button>
+        </nav>
+        <div class="header__buttons">
+        <button id="button-share" class="header__button-share">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Share
+        </button>
+        <button id="app-setting" class="header__button-setting">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        </button>
+        <button id="app-notice" class="header__button-notice">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        </button>
+        <div class="header__user-avatar">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="24px" height="24px" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M6220 11264 c-306 -38 -562 -121 -793 -257 -615 -363 -980 -1025 -954 -1732 15 -400 141 -764 377 -1085 80 -109 311 -338 417 -413 244 -173 510 -285 807 -339 173 -32 479 -32 652 0 297 54 563 166 807 339 106 75 337 304 417 413 179 244 297 518 352 820 18 94 22 154 22 330 0 244 -16 356 -78 562 -186 611 -672 1098 -1283 1284 -183 55 -320 76 -528 79 -99 2 -196 1 -215 -1z"></path>
+                <path d="M4775 6814 c-113 -15 -243 -40 -325 -64 -712 -207 -1218 -811 -1299 -1552 -7 -65 -11 -689 -11 -1883 l0 -1785 3260 0 3260 0 0 1785 c0 1185 -4 1818 -11 1883 -80 740 -600 1357 -1309 1555 -232 65 -102 61 -1900 63 -899 0 -1648 0 -1665 -2z"></path>
+                </g>
+                </svg>
+        </div>
+
+        </div>
+ 
+    </div>
+    
+
+</header>
+
+<div class="stages-columns">
+    <div id="1" class="stages-column--item">
+        <div class="stages-column__header">
+            <h3 class="stages-column__title">ToDo</h3>
+            <span class="todo-count">0</span>
+            <button id="create-card" class="stages-column__create-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                </svg>
+            </button>
+            <button id="delete-all-btn" class="stages-column__delete-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+            </button>
+        
+
+        </div>
+
+        <div id="todo-stage" class="stages-column__cards">
+
+        </div>
+    </div>
+
+    <!--In progress-->
+    <div id="2" class="stages-column--item">
+        <div class="stages-column__header">
+            <h3 class="stages-column__title">In progress</h3>
+            <span class="todo-count">0</span>
+            <button id="delete-all-btn" class="stages-column__delete-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="stages-column__cards">
+
+        </div>
+    </div>
+
+    <!--Done-->
+    <div id="3" class="stages-column--item">
+        <div class="stages-column__header">
+            <h3 class="stages-column__title">Done</h3>
+            <span class="todo-count">0</span>
+
+            <button id="delete-all-btn" class="stages-column__delete-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+            </button>
+        </div>
+        <div class="stages-column__cards"></div>
+    </div>
+</div>
+
+<!--Тестовая ссылка для открытия модального окна-->
+<div id="wrap-confirm-modal" class="modal__wrap">
+    <div id="deleteWindow" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Are you sure?</h3>
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <button id="modal-yes" class="btn modal-btn">Yes</button>
+                <button id="modal-no" class="btn modal-btn">No</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Модальное окно предупреждения -->
+<div id="wrap-warning-modal" class="modal__wrap">
+  <div id="warning-modal" class="modal-warning">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Too many active cases. Complete at least one to start a new one.</h3>
+            </div>
+            <div class="modal-body">
+                <button class="card-modal__button--cancel" type="button" id="warning-cancel-btn">Easy!</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Модальное окно создания карточки -->
+<div id="wrap-card-modal" class="modal__wrap">
+  <form id="card-form" class="card-modal">
+      <div class="card-modal__content">
+          <div class="card-modal__header">
+              <a href="#close" title="Close" class="close" id="close-modal">×</a>
+              <h5 class="card-modal__title">Fill in the required fields to create a new card:</h5>
+          </div>
+          <div class="card-modal__body">
+              <p class="card-modal__heading">Title:</p>
+              <input id="card-modal__input-title" class="card-modal__input-title" type="text" minlength="1" maxlength="100" size="41" placeholder="Enter card title">
+              <p class="card-modal__heading">Description:</p>
+              <textarea id="card-modal__textarea-desc" class="card-modal__textarea-desc" name="text" minlength="1" maxlength="350" rows="8" cols="50" placeholder="Enter card description"></textarea>
+              <select id="card-avatar" class="card__avatar">
+                <option>Author</option>
+                </select>
+          </div>
+          <div class="card-modal__footer">
+              <button class="card-modal__button--save" type="submit" id="create-btn">Create card</button>
+              <button class="card-modal__button--cancel" type="button" id="cancel-btn">Cancel</button>
+          </div>
+      </div>
+    </form>
+</div>
+
+
+</body>
+</html>
+
+
+

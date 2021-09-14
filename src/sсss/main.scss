@@ -1,0 +1,18 @@
+// Config
+@import 'config/reset';
+@import 'config/base';
+@import 'config/mixins';
+@import 'config/media';
+@import 'config/variables';
+
+
+
+// Components
+@import 'components/layout';
+@import 'components/card';
+@import 'components/deleteWindow';
+@import 'components/openCard';
+@import 'components/modal';
+@import 'components/stagesColumns';
+@import 'components/header';
+@import 'components/layout'

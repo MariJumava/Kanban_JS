@@ -1,0 +1,29 @@
+{
+  "name": "up-to-madnesss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleg-Kolosov/Up-to-MADNESSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleg-Kolosov/Up-to-MADNESSS/issues"
+  },
+  "homepage": "https://github.com/Oleg-Kolosov/Up-to-MADNESSS#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "card": "^2.5.2"
+  }
+}

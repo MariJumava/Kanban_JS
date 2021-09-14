@@ -1,0 +1,87 @@
+.stages-columns {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stages-column--item {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: $border-radius;
+  background-color: $basic-background;
+}
+
+.stages-column__cards {
+  min-height: 300px;
+}
+.stages-column__header {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 90px;
+  padding-bottom: 30px;
+
+  
+
+.stages-column__title {
+  font-size: calc(16px + 16 * ((100vw - 320px) / (1280 - 320)));
+  font-weight: 700;
+  color: #000000;
+}
+
+.stages-column__create-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  color: $basic-color;
+  background-color: $create-button-color;
+  border: none;
+  border-radius: $border-radius;
+
+  transition: background-color 0.3s ease-in-out, stroke 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+}
+
+ .stages-column__delete-btn {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+  color: $basic-color;
+  background-color: $delete-button-color;
+  stroke: $basic-color;
+  border-radius: $border-radius;
+  border: none;
+
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, stroke 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ }
+
+ .stages-column__create-btn:hover {
+  @include create-button-hover;
+ }
+
+ .stages-column__delete-btn:hover {
+  @include delete-button-hover;
+ }
+
+ .todo-count {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   justify-self: flex-end;
+   width: 30px;
+   height: 30px;
+   margin-left: 5px ;
+  font-size: 25px;
+  font-weight: 700;
+  border: 3px solid $border-elem-color;
+  border-radius: $border-radius;
+}

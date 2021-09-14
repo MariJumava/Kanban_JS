@@ -1,0 +1,57 @@
+@mixin delete-button-hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  stroke: $delete-button-color;
+  box-shadow: inset 0 0 0 3px $delete-button-color;
+  }
+
+@mixin create-button-hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  stroke: $create-button-color;
+  box-shadow: inset 0 0 0 3px $create-button-color;
+}
+
+
+@mixin start-working-button-hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  color: $start-working-button;
+  box-shadow: inset 0 0 0 3px $start-working-button;
+}
+
+
+@mixin change-button-hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  color: $change-button-color;
+  box-shadow: inset 0 0 0 3px $change-button-color;
+}
+
+@mixin card-creator-button-hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  color: $author-button-color;
+  box-shadow: inset 0 0 0 3px $author-button-color;
+}
+
+@mixin avatar-button-hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 0 3px $blue-basic-color;
+}
+
+@mixin card-btn-delete-hover {
+  cursor: pointer;
+  background-color: $basic-color;
+  stroke: $plus-background-color;
+  box-shadow: inset 0 0 0 3px $plus-background-color;
+}
+
+@mixin transfer-btn-hover {
+  cursor: pointer;
+  background-color: $basic-color;
+  stroke: $transfer-button-color;
+  box-shadow: inset 0 0 0 3px $transfer-button-color;
+}
+

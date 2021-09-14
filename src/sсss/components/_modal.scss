@@ -1,0 +1,122 @@
+.modal__wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  visibility: hidden;
+  width: 100vw;
+  height: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
+  z-index: 8000;
+}
+
+.card-modal {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  z-index: 9000;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  padding: 0.6em;
+  background: $basic-background;
+  border: #d2defb 2px solid;
+  z-index: 9000;
+
+  &__title {
+    padding: 0.3em 0.3em 0.5em 0.3em;
+    font-weight: 700;
+    font-size: calc(6px + 1vw);
+    text-align: center;
+    color: #000000;
+  }
+
+  &__heading {
+    margin: 7px 0px 7px 0px;
+    padding: 3px;
+    font-weight: 700;
+    font-size: calc(4px + 1vw);
+    color: #424244;
+  }
+
+  &__input-title {
+    width: 95%;
+    font-weight: 700;
+    font-size: calc(2px + 1vw);
+  }
+
+  &__textarea-desc {
+    width: 95%;
+    max-height: 200px;
+    min-height: 111px;
+    font-weight: 700;
+    font-size: calc(2px + 1vw);
+  }
+
+  &__button--author {
+    width: 45%;
+    margin-top: 0.2em;
+    padding: 0.3em;
+    color: $basic-color;
+    background: $author-button-color;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__button--author:hover {
+   @include card-creator-button-hover;
+  }
+
+  &__footer {
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  &__button--cancel {
+    width: 30%;
+    margin-left: 0.3em;
+    padding: 0.6em;
+    font-size: calc(3px + 1vw);
+    color: $basic-color;
+    background: $delete-button-color;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__button--cancel:hover {
+    @include delete-button-hover;
+  }
+
+  &__button--save {
+    width: 30%;
+    margin-right: 0.3em;
+    padding: 0.6em;
+    font-size: calc(3px + 1vw);
+    color: $basic-color;
+    background: $create-button-color;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__button--save:hover {
+  @include create-button-hover;
+  }
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+

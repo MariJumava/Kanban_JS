@@ -1,0 +1,184 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+
+    border-bottom: 2px solid $border-elem-color ;
+}
+.header__title {
+    font-size: 40px;
+    font-weight: 700;
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 80%;
+    height: 100%;
+}
+
+.header__search,
+.header__button-share,
+.header__button-setting,
+.header__button-notice {
+    margin-right: 2%;
+}
+
+.header__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+
+    border-radius: $border-radius;
+    background-color: $border-elem-color;
+}
+.header__search-icon {
+    position: absolute;
+    top: calc(50% - 8px);
+    
+    left: 10px;
+    width: 20px;
+}
+
+
+.header__buttons {
+ display: flex;
+ justify-content: space-around;
+ width: 30%;
+} 
+
+.header__input {
+    border: none;
+    width: 100%;
+    margin-left: 40px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: $border-elem-color;
+}
+.header__button-share {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 50%;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    border: 3px solid $create-button-color;
+    border-radius: $border-radius;
+    background-color: $create-button-color;
+    color: $basic-color;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+        background-color: $basic-color;
+        color: $create-button-color
+    }
+}
+.header__button-setting {
+    display: flex;
+    align-items: center;
+    height: 50%;
+
+    background-color: $basic-color;
+    border: 3px solid $basic-color;
+    border-radius: $border-radius;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border-color: $create-button-color;
+    }
+}
+.header__button-notice {
+    display: flex;
+    align-items: center;
+    height: 50%;
+
+    background-color: $basic-color;
+    border: 3px solid $basic-color;
+    border-radius: $border-radius;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border-color: $create-button-color;
+    }
+}
+.header__user-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 50%;
+
+    border: 3px solid $basic-color;
+    border-radius: $border-radius;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+        border-color: $create-button-color;
+    }
+}
+
+
+// Стили для бургер-меню
+
+.header__burger-menu {
+    display: none;
+    height: 30%;
+}
+
+.burger-menu__nav-toggle {
+    position: relative;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 7px 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform:(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.burger-menu__nav-toggle:focus {
+    outline-width: 0;
+}
+
+.burger-menu__nav-toggle [class*='bar-'] {
+    background: #E8AD1A;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+    border-radius: 8px;
+    height: 8px;
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+.burger-menu__nav-toggle .burger-menu--bar-bot {
+    margin-bottom: 0;
+}
+
+.opened .burger-menu--bar-bot {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 15% 15%;
+    transform-origin: 15% 15%;
+}
+
+.opened .burger-menu--bar-mid {
+    opacity: 0;
+}
+
+.opened .burger-menu--bar-bot {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 15% 95%;
+    transform-origin: 15% 95%;
+}
